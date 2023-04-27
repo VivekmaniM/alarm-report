@@ -229,7 +229,7 @@
             }
 
             async function getUserVehicle(callback) {
-                await fetch("http://3.7.46.74:8088/StandardApiAction_queryUserVehicle.action?jsession=" + nexex_authorization_response.jsession + "&language=zh").then(response => {
+                await fetch("https://3.7.46.74:8088/StandardApiAction_queryUserVehicle.action?jsession=" + nexex_authorization_response.jsession + "&language=zh").then(response => {
                     if(response.ok) {
                         return response.json()
                     }
